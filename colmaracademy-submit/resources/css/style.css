@@ -1,0 +1,388 @@
+
+body {
+  font-size: 16px;
+  font-family: "Lato", "Helvetica", sans-serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: dimgrey;
+  font-family: "Oswald", "Helvetica", sans-serif;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: dimgrey;
+  font-family: "Oswald", "Helvetica", sans-serif;
+}
+
+header {
+  height: 4rem;
+  padding-left: 1.5rem;
+}
+
+.navbrand {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.navmenu ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navmenu ul li {
+  padding: 1rem;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+
+/*banner section*/
+
+.bannercontainer {
+  background-color: lightgrey;
+  height: 35rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bannercontainer img {
+  /*height: 20rem;*/
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.bannertext {
+  margin: 8rem 6rem 8rem 2rem;
+}
+
+.button {
+  height: 1.5rem;
+  width: 40%;
+  background-color: dimgrey;
+  color: white;
+  text-align: center;
+  padding: .5rem
+}
+
+/* Information Section */
+
+.informationcontainer {
+  display: flex;
+  justify-content:space-between;
+}
+
+.information-left {
+  /*width: 60%;*/
+  padding: 2rem 1.5rem;
+}
+
+.information-left img {
+  /*width: 60%;
+  padding: 2rem 1.5rem;*/
+  display: block;
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+
+.information-text {
+  /*width: 60%;*/
+  padding: 0rem 1.5rem;
+}
+
+.information-text p {
+  padding: 1.5rem 0;
+}
+
+.information-right {
+  border: 1px lightgrey solid;
+  /*width: 40%;*/
+}
+
+.information-card {
+  display: flex;
+  width: 27rem;
+  height: 10.5rem;
+  border: 1px lightgrey solid;
+}
+
+.information-card:nth-child(3n+3) {
+  background-color: lightgrey;
+}
+
+.information-card img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.information-card-mobile {
+  display: none;
+}
+
+.card-detail {
+  padding: 1rem;
+}
+
+.card-detail h4 {
+  padding: .5rem 0rem;
+}
+
+.card-detail p {
+  color: cornflowerblue;
+}
+
+.information-text p {
+  padding-top: 1.5rem 0;
+}
+
+/*Learning Section*/
+
+.learningcontainer {
+  background-color: lightgrey;
+}
+
+.section-heading {
+  padding: 2rem 0rem;
+  text-align: center;
+}
+
+.learning-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*padding: 2rem;*/
+}
+
+.learning-card {
+  margin: 0rem 2rem 2rem 2rem;
+  background-color: white;
+  width: 26%;
+}
+
+.learning-card img {
+  width: 100%;
+}
+
+.learning-card p {
+padding: .5rem 0rem;
+}
+
+.learning-card-detail {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.learning-card-mobile {
+  display: none;
+}
+
+
+/*thesis section*/
+.thesiscontainer {
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.thesis-subcontainer {
+  display: flex;
+  justify-content:space-between;
+}
+
+.thesis-left {
+  /*width: 60%;*/
+  padding: 0rem 1.5rem;
+
+}
+.thesis-left video {
+  display: block;
+  max-width: 100%;
+  /*width: 60%;
+  padding: 2rem 1.5rem;*/
+}
+
+.thesis-text {
+  /*width: 60%;*/
+  padding: 0rem 1.5rem;
+}
+
+.thesis-text h2 {
+  padding: 1.5rem 0rem;
+}
+
+/*.thesis-right {
+  width: 40%;
+}*/
+
+.thesis-information-card {
+  display: flex;
+  width: 27rem;
+  height: 10.5rem;
+  /*border: 1px lightgrey solid;*/
+}
+
+.thesis-information-card:nth-child(2n+1) {
+  background-color: lightgrey;
+}
+
+.thesis-information-card img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.thesis-card-detail {
+  padding: 1rem;
+}
+
+.thesis-card-detail h4 {
+  padding: .5rem 0rem;
+}
+
+/*footer section*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 3rem;
+  padding: 1.5rem;
+  border: 1px lightgrey solid;
+}
+
+.footer-right ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right ul li {
+  padding-left: 1rem;
+}
+
+
+/*Mobile CSS*/
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .navbrand {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .bannercontainer {
+    flex-direction: column;
+    /*background-color: white;
+    margin: .5rem;*/
+  }
+
+  .bannercontainer img {
+    width: 100%;
+    height: 15rem;
+    padding: 0rem;
+  }
+
+  .bannertext {
+    margin: .5rem 1rem;
+    background-color: lightgrey;
+  }
+
+  .bannertext h2 {
+    padding: 1.5rem;
+  }
+
+  .button {
+    height: 1.5rem;
+    width: 95%;
+    background-color: dimgrey;
+    color: white;
+    text-align: center;
+    padding: .5rem
+  }
+
+  .information-left {
+    display: none;
+  }
+
+  .information-card {
+    display: none;
+  }
+
+  .information-card-mobile {
+    display: inline;
+    width: 27rem;
+    height: 10.5rem;
+    /*border: 1px lightgrey solid;*/
+    padding: 1rem;
+  }
+
+/*
+  .information-card-mobile {
+    display: block;
+    width: 100%;
+  }*/
+
+  .learningcontainer {
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .learning-card {
+    display: none;
+  }
+
+  .learning-card-mobile {
+    display: inline;
+  }
+
+  .learning-card-mobile h2 {
+    background-color: lightgrey;
+    margin: .5rem;
+    padding: 1.25rem;
+  }
+
+  .section-heading {
+    padding: 1rem 0rem;
+  }
+
+  .thesis-right {
+    display: none;
+  }
+
+  .thesis-text {
+    display: none;
+  }
+
+  .footer-right {
+    display: none;
+  }
+
+
+
+
+
+
+}
